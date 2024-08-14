@@ -68,6 +68,8 @@ function App() {
   return (
     <div className='container'>
       <div className='calculadora'>
+      <p className='Nome'> Luis Henrique Bonini Santiago</p>
+      <p className='Nome'> Fernando Mazzeto Lisboa Lima</p>
         <div className='calculadoraHeader'>
           <p className='equacao'>{numeroDois}</p>
           <p className='resultado'> {sinal} {numeroUm}</p>
@@ -76,7 +78,7 @@ function App() {
           <div className='linhas'>
             <Botao color={'#a5a5a5'} background={'#616161'} onClick={() => limparLinha()} text={'CE'}/>
             <Botao color={'#a5a5a5'} background={'#616161'} onClick={() => limpar()} text={'C'}/>
-            <Botao color={'#a5a5a5'} background={'#616161'} onClick text={'%'}/>
+            {/* <Botao color={'#a5a5a5'} background={'#616161'} onClick text={'%'}/> */}
             <Botao color={'#339dff'} background={'#005db2'} onClick={() => conta("/")} text={"/"}/>
           </div>
           <div className='linhas'>
@@ -99,7 +101,7 @@ function App() {
           </div>
           <div className='linhas'>
             <Botao color={'#a5a5a5'} background={'#616161'} onClick={() => adicionaNumero(0)} text={'0'}/>
-            <Botao color={'#a5a5a5'} background={'#616161'} onClick text={'.'}/>
+            {/* <Botao color={'#a5a5a5'} background={'#616161'} onClick text={'.'}/> */}
             <Botao color={'#a5a5a5'} background={'#616161'} onClick={() => resultado("=")} text={'='}/>
           </div>
         </div>
